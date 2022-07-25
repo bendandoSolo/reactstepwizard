@@ -1,11 +1,24 @@
 import React from 'react';
-import { Formik, Field, Form, Label } from 'formik';
+import { Formik, Field, Form } from 'formik';
+// eslint-disable-next-line
 import * as Yup from 'yup';
+import { isDisabled } from '@testing-library/user-event/dist/utils';
 
 
 
 
-const SelectService = () => {
+const SelectService = ({GoTo}) => {
+
+    const isDisabled = (values) => {
+        //alert(JSON.stringify((values));
+        return Object.values(values).every(values => values === false) ? true : false;
+        
+        //return true;
+        //return false;
+
+    }
+
+
     return (
         <div>
             <h2>Select which of the following services you wish to use</h2>
@@ -22,34 +35,44 @@ const SelectService = () => {
       onSubmit={values => {
         // eslint-disable-next-line no-undef
         //await sleep(500);
-        alert(JSON.stringify(values, null, 2));
+        //alert(JSON.stringify(values, null, 2));
+        //const page = 2;
+       
+    //    alert(JSON.stringify(values)); 
+
+    //    values['page'] = 2; 
+    //    alert(JSON.stringify(values)); 
+       
+       
+       //GoTo(page);
+        GoTo(2,values);
       }}
     >
-      {({ generalWaste, DMR, paperAndCard, foodWaste, glass }) => (
+      {({ values }) => (
         <Form>
           {/* 
             This first checkbox will result in a boolean value being stored. Note that the `value` prop
             on the <Field/> is omitted
           */}
           <label htmlFor="generalWaste">General Waste</label>
-            <Field type="checkbox" name="General Waste"/>
-            {`${generalWaste.toggle}`}
+            <Field type="checkbox" name="generalWaste"/>
+            {`${values.generalWaste}`}
           <br/>
           <label htmlFor="DMR">DMR</label>
-            <Field type="checkbox" name="General Waste"/>
-            {`${DMR.toggle}`}
+            <Field type="checkbox" name="DMR"/>
+            {`${values.DMR}`}
           <br/>
           <label htmlFor="paperAndCard">Paper and Card</label>
-            <Field type="checkbox" name="General Waste"/>
-            {`${paperAndCard.toggle}`}
+            <Field type="checkbox" name="paperAndCard"/>
+            {`${values.paperAndCard}`}
           <br/>
           <label htmlFor="foodWaste">Food</label>
-            <Field type="checkbox" name="General Waste"/>
-            {`${foodWaste.toggle}`}
+            <Field type="checkbox" name="foodWaste"/>
+            {`${values.foodWaste}`}
           <br/>
           <label htmlFor="glass">Glass</label>
-            <Field type="checkbox" name="General Waste"/>
-            {`${glass.toggle}`}
+            <Field type="checkbox" name="glass"/>
+            {`${values.glass}`}
           <br/>
 
 
@@ -101,7 +124,7 @@ const SelectService = () => {
             </label>
           </div> */}
 
-          <button type="submit">Submit</button>
+          <button type="submit" disabled={isDisabled(values)}>next</button>
         </Form>
       )}
     </Formik>
