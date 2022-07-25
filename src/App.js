@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Notes from './components/Notes'
+import Wizard from './components/BasicWizard'
+import Sample from './components/StyledWizard'
+import HurnTest from './components/HurnTest'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   <Notes/>
+   <h3>Postcode selector removed from the wizard...</h3>
+   <p>Hurn Recycling will work only for the following postcodes.  </p>
+   <br/>
+   <HurnTest />
+   {/* <Sample/> */}
+   <br/>
+   <Wizard />
+   </>
   );
 }
 
