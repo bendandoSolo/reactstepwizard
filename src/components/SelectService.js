@@ -2,7 +2,6 @@ import React from 'react';
 import { Formik, Field, Form } from 'formik';
 // eslint-disable-next-line
 import * as Yup from 'yup';
-import { isDisabled } from '@testing-library/user-event/dist/utils';
 
 
 
@@ -10,12 +9,7 @@ import { isDisabled } from '@testing-library/user-event/dist/utils';
 const SelectService = ({GoTo}) => {
 
     const isDisabled = (values) => {
-        //alert(JSON.stringify((values));
         return Object.values(values).every(values => values === false) ? true : false;
-        
-        //return true;
-        //return false;
-
     }
 
 
@@ -33,18 +27,6 @@ const SelectService = ({GoTo}) => {
         glass: false,
       }}
       onSubmit={values => {
-        // eslint-disable-next-line no-undef
-        //await sleep(500);
-        //alert(JSON.stringify(values, null, 2));
-        //const page = 2;
-       
-    //    alert(JSON.stringify(values)); 
-
-    //    values['page'] = 2; 
-    //    alert(JSON.stringify(values)); 
-       
-       
-       //GoTo(page);
         GoTo(2,values);
       }}
     >

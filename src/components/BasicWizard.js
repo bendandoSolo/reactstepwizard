@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment, useState } from "react";
 import StepWizard from "react-step-wizard";
 
 //import Nav from "./Nav";
