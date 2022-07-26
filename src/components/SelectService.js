@@ -4,14 +4,11 @@ import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
 
 
-
-
 const SelectService = ({GoTo}) => {
 
     const isDisabled = (values) => {
         return Object.values(values).every(values => values === false) ? true : false;
     }
-
 
     return (
         <div>
@@ -25,6 +22,7 @@ const SelectService = ({GoTo}) => {
         paperAndCard: false,
         foodWaste: false,
         glass: false,
+        confidential: false
       }}
       onSubmit={values => {
         GoTo(2,values);
@@ -55,56 +53,9 @@ const SelectService = ({GoTo}) => {
           <label htmlFor="glass">Glass</label>
             <Field type="checkbox" name="glass"/>
             {`${values.glass}`}
-          <br/>
-
-
-          {/* <label>
-            <Field type="checkbox" name="toggle" />
-            {`${values.toggle}`}
-          </label>
-
-          <label>
-            <Field type="checkbox" name="toggle" />
-            {`${values.toggle}`}
-          </label>
-
-          <label>
-            <Field type="checkbox" name="toggle" />
-            {`${values.toggle}`}
-          </label>
-
-          <label>
-            <Field type="checkbox" name="toggle" />
-            {`${values.toggle}`}
-          </label>
-
-          <label>
-            <Field type="checkbox" name="toggle" />
-            {`${values.toggle}`}
-          </label> */}
-
-
-          {/* 
-            Multiple checkboxes with the same name attribute, but different
-            value attributes will be considered a "checkbox group". Formik will automagically
-            bind the checked values to a single array for your benefit. All the add and remove
-            logic will be taken care of for you.
-          */}
-          {/* <div id="checkbox-group">Checked</div>
-          <div role="group" aria-labelledby="checkbox-group">
-            <label>
-              <Field type="checkbox" name="checked" value="One" />
-              One
-            </label>
-            <label>
-              <Field type="checkbox" name="checked" value="Two" />
-              Two
-            </label>
-            <label>
-              <Field type="checkbox" name="checked" value="Three" />
-              Three
-            </label>
-          </div> */}
+            <label htmlFor="confidential">Confidential</label>
+            <Field type="checkbox" name="confidential"/>
+            {`${values.confidential}`}
 
           <button type="submit" disabled={isDisabled(values)}>next</button>
         </Form>

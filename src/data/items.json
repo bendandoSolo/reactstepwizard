@@ -1,0 +1,150 @@
+[
+      {
+        "id": 1,
+        "name": "General Waste Bags (min order 25x bags)",
+        "category": "generalWaste",
+        "price": 3.70,
+        "quantity": 0,
+        "frequency": "1/week"
+      },
+      {
+        "id": 2,
+        "name": "240 Litre General Waste Bin",
+        "category": "generalWaste",
+        "price": 7.90,
+        "quantity": 0,
+        "frequency": "1/week"
+      },
+      {
+        "id": 3,
+        "name": "360 Litre General Waste Bin",
+        "category": "generalWaste",
+        "price": 9.15,
+        "quantity": 0,
+        "frequency": "1/week"
+      },
+      {
+        "id": 4,
+        "name": "660 Litre General Waste Bin",
+        "category": "generalWaste",
+        "price": 10.65,
+        "quantity": 0,
+        "frequency": "1/week"
+      },
+      {
+        "id": 5,
+        "name": "1100 Litre General Waste Bin",
+        "category": "generalWaste",
+        "price": 16.20,
+        "quantity": 0,
+        "frequency": "1/week"
+      },
+      {
+        "id": 6,
+        "name": "Dry Mixed Recycling Bags (min order 25x bags)",
+        "category": "DMR",
+        "price": 3.10,
+        "quantity": 0,
+        "frequency": "1/week"
+      },
+      {
+        "id": 7,
+        "name": "240 Litre Dry Mixed Recycling Bin",
+        "category": "DMR",
+        "price": 7.40,
+        "quantity": 0,
+        "frequency": "1/week"
+      },
+      {
+        "id": 8,
+        "name": "360 Litre Dry Mixed Recycling Bin",
+        "category": "DMR",
+        "price": 8.70,
+        "quantity": 0,
+        "frequency": "1/week"
+      },
+      {
+        "id": 9,
+        "name": "660 Litre Dry Mixed Recycling Bin",
+        "category": "DMR",
+        "price": 9.75,
+        "quantity": 0,
+        "frequency": "1/week"
+      },
+      {
+        "id": 10,
+        "name": "1100 Litre Dry Mixed Recycling Bin",
+        "category": "DMR",
+        "price": 11.65,
+        "quantity": 0,
+        "frequency": "1/week"
+      },
+
+      {
+        "id": 11,
+        "name": "Cardboard Bundle (waste height)",
+        "category": "paperAndCard",
+        "price": 7.00,
+        "quantity": 0,
+        "frequency": "1/week"
+      },
+      {
+        "id": 12,
+        "name": "660 Litre Paper and Cardboard Bin",
+        "category": "paperAndCard",
+        "price": 8.00,
+        "quantity": 0,
+        "frequency": "1/week"
+      },
+      {
+        "id": 13,
+        "name": "1100 Litre Paper and Cardboard Bin",
+        "category": "paperAndCard",
+        "price": 9.00,
+        "quantity": 0,
+        "frequency": "1/week"
+      },
+
+      {
+        "id": 14,
+        "name": "240 Litre Food Bin",
+        "category": "food",
+        "price": 12.50,
+        "quantity": 0,
+        "frequency": "1/week"
+      },
+
+      {
+        "id": 15,
+        "name": "240 Litre Glass Bin",
+        "category": "glass",
+        "price": 7.50,
+        "quantity": 0,
+        "frequency": "1/week"
+      },
+
+      {
+        "id": 16,
+        "name": "360 Litre Glass Bin",
+        "category": "glass",
+        "price": 8.50,
+        "quantity": 0,
+        "frequency": "1/week"
+      },
+
+      {
+        "id": 17,
+        "name": "Confidential Waste Bags (min order 10 bags 10.50 per bag)",
+        "category": "confidential",
+        "price": 10.50,
+        "quantity": 0,
+        "frequency": "1/week"
+      },
+      {
+        "id": 18,
+        "name": "Secure Bin",
+        "category": "confidential",
+        "price": 35.00,
+        "frequency": "1/week"
+      }
+]
