@@ -38,11 +38,14 @@ const HurnTest = () => {
 
     return (
         <>
-          <ItemsView />
+          
           <h6>Services: {JSON.stringify(services)}</h6>
-
+          {Object.entries(services).map( 
+                 (data) => <p>{JSON.stringify(data)} </p>
+          )}
+           < hr/>
           {/* <PostcodeSelector GoTo = {GoTo}/> */}
-          {/* <StepWizard 
+          <StepWizard 
             instance={setInstance}
             >
             <SelectService  GoTo = {GoTo} services={services}/>
@@ -50,9 +53,8 @@ const HurnTest = () => {
             <Page1 />
             <Page2 />
           </StepWizard>
-          {Object.entries(services).map( 
-                 (data) => <p>{JSON.stringify(data)} </p>
-          )} */}
+          < hr/>
+          <ItemsView />
           
         </>
     );

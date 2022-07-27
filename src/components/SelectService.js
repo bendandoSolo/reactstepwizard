@@ -53,10 +53,11 @@ const SelectService = ({GoTo}) => {
           <label htmlFor="glass">Glass</label>
             <Field type="checkbox" name="glass"/>
             {`${values.glass}`}
+            <br/>
             <label htmlFor="confidential">Confidential</label>
             <Field type="checkbox" name="confidential"/>
             {`${values.confidential}`}
-
+            <br/>
           <button type="submit" disabled={isDisabled(values)}>next</button>
         </Form>
       )}

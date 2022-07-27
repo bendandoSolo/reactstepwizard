@@ -8,7 +8,7 @@ const ItemsView = () => {
         <div>
             <h2>View of all Items</h2>
             {storeItems.map(item => (
-                    <p>{JSON.stringify(item)}</p>
+                    <p key={item.id}>{JSON.stringify(item)}</p>
             ))}
         </div>
     );
